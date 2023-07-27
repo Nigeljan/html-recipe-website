@@ -1,25 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="en"><!--Set the language of the website to English-->
     
     <head>
         <meta charset="utf-8">
-        <title>3 Common Food Dishes</title>
+        <title>3 Common Food Dishes</title> <!--Name of the website at the title bar-->
+    
+    <!--Designing and formatting the important information using internal method of css-->
+    <style>
+
+        *{
+            margin: 20px 60px 20px 50px;
+            background-color:rgb(217, 193, 164); 
+        }  
+        
+        body{
+            border:5px groove black;
+            background-color: rgba(255, 187, 60, 0.977);
+            box-shadow:2px 2px  brown; 
+        }
+
+        h1{
+            background-color: burlywood;
+            border: 5px ridge gold;
+            border-radius: 15px;
+            text-align: center;
+            
+        }
+        
+        img{
+            border: 9px groove grey;
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+           
+        }
+
+        ul{
+            border:6px ridge brown;
+            background-color: burlywood;
+        }
+
+        p{
+            background-color: burlywood;
+            border:6px ridge brown;
+            padding: 7px 5px 7px 7px;
+        }      
+        
+        .Recipe,.cook,.Button_Link{
+            background-color: burlywood;
+        }
+         
+        .Recipe,.cook{
+            margin:3px;
+        }
+       
+
+        .link{
+            border: 4px dashed brown; 
+            padding: 10px; 
+            background-color:rgb(232, 232, 167);
+        }
+
+        .Link{
+            background-color: burlywood;
+            font-family:'Times New Roman', Times, serif 
+        }
+
+        .click{
+            border-radius:5px;
+        }
+        </style>
+    <!--Conclude the Head Tag-->  
     </head>
 
     <body>
         <h1>3 Common Food Dishes in our Society</h1>
 
+    <!--Display image-->    
     <img src="Chef-Paul-Hunger.jpg" alt="This chef was known for his cooking skills in the movie Hunger" width="600px" height="500px"/>    
-    <p>Here are the <strong>3 Odin Recipes</strong> you can discover for you to learn how to <em><strong>
-        cook/bake</strong></em> a food to feed poor people around your area that's also affordable on your pocket:</p>
-        
+    <!--Display description-->  
+    <p>Here are the<strong class="Recipe">3 Odin Recipes</strong>you can discover for you to learn how to<strong class="Recipe"><em class="cook">
+        cook/bake</em></strong>a food to feed poor people around your area that's also affordable on your pocket:</p>
+    <!--Display Unordered list-->      
     <ul>
-        <li><strong>Link for Pizza Recipe</strong></li>
-        <a href ="recipe/pizza.html">Pizza Recipe</a>
-        <li><strong>Link for Fried CHicken Recipe</strong></li>
-        <a href = "recipe/Fried Chicken.html">Fried Chicken Recipe</a>
-        <li><strong>Link for Donut Recipe</strong></li>
-        <a href="recipe/pizza.html">Pizza Recipe</a>
+        <li class="Link"><strong class="link">Link for Pizza Recipe</strong></li>
+        <a class="Button Link" href="recipe/pizza.html"><button class="click">Pizza Recipe</button></a>
+        <li class="Link"><strong class="link">Link for Fried Chicken Recipe</strong></li>
+        <a class="Button Link" href = "recipe/Fried Chicken.html"><button class="click">Chicken Recipe</button></a>
+        <li class="Link"><strong class="link">Link for Donut Recipe</strong></li>
+        <a class="Button Link" href="recipe/Donut.html"><button class="click">Donut Recipe</button></a>
     </ul>
+    <!--COnclude the Body of the Website-->  
     </body>
 </html>
